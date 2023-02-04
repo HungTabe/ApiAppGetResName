@@ -1,5 +1,9 @@
 # Restaurant Recommender App using OpenAI and NextJS
 
+### Demo App
+
+   https://suggest-restaurant.vercel.app/
+
 ## Setup
 
 1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
