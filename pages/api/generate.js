@@ -2,6 +2,7 @@ import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
+  basePath: 'https://api.chatanywhere.tech/v1'
 });
 const openai = new OpenAIApi(configuration);
 
@@ -27,7 +28,7 @@ export default async function (req, res) {
 
   try {
     const completion = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       prompt: generatePrompt(actor),
       temperature: 0.6,
     });

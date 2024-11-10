@@ -34,21 +34,21 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Restaurant Recommender</title>
+        <title>Games Recommender</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
-        <h3>Random Restaurant Recommendor</h3>
+        <h3>Games for Couple Activities Recommender</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="actor"
-            placeholder="Enter the City Name"
+            placeholder="Enter your GirlFriend or BoyFriend age"
             value={actorInput}
             onChange={(e) => setActorInput(e.target.value)}
           />
-          <input type="submit" value="Recommend me a Restaurant" />
+          <input type="submit" value="Recommend me some games" />
         </form>
         <div className={styles.result}>{result}</div>
       </main>
